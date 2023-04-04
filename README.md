@@ -9,6 +9,7 @@ debian 上配置两台录播姬: bililiverecorder 和 blrec
 * 便宜的服务器带宽有限，目前的解决方案:
 1. 使用rclone 挂载onedrive，但是问题仍然在于无法进行快速的上下传（受限于带宽）不过好处是同时不用手动删除旧的录播文件（考虑到空间有限）
 2. 花钱增加带宽
+3. 关于配置口袋48的弹幕，由于口袋48只有lrc的弹幕文件，可以考虑将lrc转换成持续时间固定的，出现位置随机的xml/ass文件后输出视频。
 
 [配置rclone，挂载onedrive](https://333rd.net/posts/tech/linux%E4%BD%BF%E7%94%A8rclone%E6%8C%82%E8%BD%BDonedrive%E7%BD%91%E7%9B%98/)\
 [使用rclone扩展服务器硬盘](https://cloud.tencent.com/developer/article/1936298)
